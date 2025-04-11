@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquérito sobre Hábitos Alimentares</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <h1>
+            Inquéritos sobre Hábitos Alimentares
+        </h1>
+    </header>
+    <!--Main-->
+    <!--Explicação sobre do que se trata o Inquérito e seu procedimento-->
+    <p>
+        Este inquérito está enquadrado num estudo para a caracterização dos Hábitos Alimentares em Portugal.
+    </p>
+    <p>
+        Ao longo deste formulário estaremos a recolher informações suas:
+        <a href="#CarGer">Caracterização Geral,</a>
+        <a href="#HabAl">Hábitos Alimentares</a> e
+        <a href="#Cont">Contactos.</a>
+    </p>
+    <p>
+        Pedimos que seja o mais honesto possível na resposta às questões que se seguem.
+    </p>
+    <p>
+        O preenchimento deste formulário não deve demorar mais do que 3 minutos. Desde já agradecemos pela sua colaboração!
+    </p>
+    <form action="https://www.bytes4future.pt/" method="post">
+    <!--Inicio das Sections-->
+    <!--section 1 - Caracterização Geral-->
+    <section id="CarGer" class="left">
+        <h2>Caraterização Geral</h2>
+        <fieldset>
+            <legend>Idade</legend>
+            <p>Em que faixa etária se insere?</p>
+            <input type="radio" name="Idade" value="Entre 18 e 25" id="Entre-18-e-25">
+            <label for="Entre-18-e-25">Entre 18 e 25</label> <br><br>
+            <input type="radio" name="Idade" value="Entre 26 e 45" id="Entre-26-e-45">
+            <label for="Entre-26-e-45">Entre 26 e 45</label> <br><br>
+            <input type="radio" name="Idade" value="Entre 46 e 65" id="Entre-46-e-65">
+            <label for="Entre-46-e-65">Entre 46 e 65</label> <br><br>
+            <input type="radio" name="Idade" value="Mais de 65" id="Mais-de-65">
+            <label for="Mais-de-65">Mais de 65</label> <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Género</legend>
+            <p>Com que género se identifica?</p>
+            <input type="radio" name="Género" value="Feminino" id="Feminino">
+            <label for="Feminino">Feminino</label> <br><br>
+            <input type="radio" name="Género" value="Masculino" id="Masculino">
+            <label for="Masculino">Masculino</label> <br><br>
+            <input type="radio" name="Género" value="Outro" id="Outro">
+            <label for="Outro">Outro</label> <br><br>
+        </fieldset>
+    </section>
+
+    <!--section 2 - Hábitos Alimentares-->
+    <section id="HabAl" class="left">
+        <h2>Hábitos Alimentares</h2>
+        <fieldset>
+            <legend>Número de Refeições Diárias</legend>
+            <p>Quantas refeições faz diariamente?</p>
+            <label for="Número-de-Refeições-Diárias"></label>
+        <select name="número de refeições" id="Número-de-Refeições-Diárias">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="mais de 3">mais de 3</option>
+        </select>
+        </fieldset>
+        <fieldset>
+            <legend>Tipo de Alimentos Consumidos</legend>
+            <p>Que tipos de alimentos consome com maior regularidade?</p>
+            <input type="checkbox" name="alimento" id="lac">
+            <label for="lac">Lacticínios</label> <br><br>
+            <input type="checkbox" name="alimento" id="cer">
+            <label for="cer">Cereais</label> <br><br>
+            <input type="checkbox" name="alimento" id="pei">
+            <label for="pei">Peixe</label> <br><br>
+            <input type="checkbox" name="alimento" id="car">
+            <label for="car">Carne</label> <br><br>
+            <input type="checkbox" name="alimento" id="veg">
+            <label for="veg">Vegetais</label> <br><br>
+            <input type="checkbox" name="alimento" id="out">
+            <label for="out">Outros?</label> <label for="indq">Indique quais: <input type="text" name="indq" id="indq"></label> <br><br>
+        </fieldset>
+    </section>
+
+    <!--section 3 - Contactos-->
+    <section id="Cont" class="left">
+        <h2>Contactos</h2>
+        <fieldset>
+            <legend>E-mail e Telefone</legend>
+            <p>Caso queira receber mais informações sobre o nosso estudo deixe os seus contactos.</p>
+            <label for="e-mail">Por favor introduza o seu e-mail:</label> <br>
+            <input type="email" name="e-mail" id="e-mail"> <br><br>
+            <label for="telef">Indique o seu número de telefone:</label> <br>
+            <input type="tel" name="telefone" id="telef"> <br><br>
+        </fieldset>
+        <input type="submit" value="Submeter Respostas">
+    </section>
+</form>
+</body>
+</html>
